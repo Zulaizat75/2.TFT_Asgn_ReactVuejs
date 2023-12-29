@@ -1,0 +1,68 @@
+/* src\Contacts.css */
+.name-inputs {
+    display: flex;
+    
+}
+
+.first-name{
+    height: 105px;
+    width: 260px;
+
+}
+.last-name{
+    height: 105px;
+    width: 260px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+
+#message{
+    width: 480px;
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 600px) {
+    .name-inputs {
+        flex-direction: row; /* Keep the horizontal layout on larger screens */
+
+    }
+
+    .first-name,
+    .last-name {
+        width: 40%; /* Adjust width for a two-column layout */
+        margin-right: 2%; /* Add some space between input fields */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #message {
+        width: 70%; /* Adjust width for textarea on larger screens */
+    }
+}
